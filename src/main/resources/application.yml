@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: AI-Data-Analyst
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/SuperStoreDB
+  servlet:
+    multipart:
+      max-file-size: 3MB
+      max-request-size: 6MB
+
+#Gemini API configuration
+google:
+  gemini:
+    api:
+      key: API_KEY_HERE
+      url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=%s
